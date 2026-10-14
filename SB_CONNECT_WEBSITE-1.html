@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="SB Connect helps people connect, discover jobs, and explore freelance opportunities around the world.">
+  <title>SB Connect | Connect Globally</title>
+  <style>
+:root{--blue:#1769e8;--blue-dark:#104eb5;--navy:#102344;--text:#20304b;--muted:#6c7b92;--line:#e6edf7;--pale:#f4f8ff;--white:#fff;--shadow:0 24px 65px rgba(28,73,135,.13)}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;color:var(--text);background:#fff;line-height:1.55}a{color:inherit;text-decoration:none}button,input,select{font:inherit}.site-header{height:82px;padding:0 max(5.5%,calc((100% - 1200px)/2));display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid #edf1f7;background:rgba(255,255,255,.96);position:sticky;top:0;z-index:20;backdrop-filter:blur(12px)}.brand{display:flex;align-items:center;gap:10px;font-size:18px;letter-spacing:.4px;font-weight:700;color:var(--navy)}.brand b{color:var(--blue)}.brand-mark{width:38px;height:38px;border-radius:12px;background:linear-gradient(135deg,#3486ff,#1358d4);color:#fff;display:grid;place-items:center;font-size:15px;box-shadow:0 7px 16px #1769e83b}.nav{display:flex;align-items:center;gap:28px;font-size:13px;font-weight:650}.nav>a{color:#506078}.nav>a:hover,.footer-links a:hover{color:var(--blue)}.btn{border:0;border-radius:10px;padding:12px 17px;font-weight:700;font-size:13px;cursor:pointer;display:inline-flex;align-items:center;justify-content:center;gap:10px;transition:transform .18s,box-shadow .18s,background .18s}.btn:hover{transform:translateY(-2px)}.btn-primary{background:var(--blue);color:#fff;box-shadow:0 8px 20px #1769e82b}.btn-primary:hover{background:var(--blue-dark)}.btn-outline{background:#fff;border:1px solid #d8e3f3;color:var(--navy)}.btn-light{background:#fff;border:1px solid #e2eaf5;color:var(--navy)}.btn-large{padding:15px 20px;font-size:14px}.btn-white{background:#fff;color:var(--blue);white-space:nowrap}.menu-toggle{display:none;border:0;background:transparent;font-size:25px;color:var(--navy)}
+.hero{max-width:1200px;margin:auto;padding:75px 28px 80px;display:grid;grid-template-columns:1.05fr .95fr;align-items:center;gap:50px;min-height:570px}.eyebrow{font-size:10px;letter-spacing:1.65px;font-weight:800;color:var(--blue);display:flex;align-items:center;gap:8px}.live-dot{width:7px;height:7px;border-radius:50%;background:#22c58b;box-shadow:0 0 0 4px #22c58b20}.hero h1{font-size:clamp(42px,5vw,64px);letter-spacing:-2.8px;line-height:1.09;color:var(--navy);margin:20px 0}.hero h1 span{color:var(--blue)}.hero-text{font-size:16px;line-height:1.8;color:var(--muted);max-width:490px}.hero-actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:28px}.trust-row{display:flex;align-items:center;gap:14px;margin-top:35px}.avatar-stack{display:flex;padding-left:4px}.avatar-stack span{width:31px;height:31px;border:2px solid white;border-radius:50%;margin-left:-5px;background:#d7e8ff;color:#1454b7;display:grid;place-items:center;font-size:10px;font-weight:800}.avatar-stack span:nth-child(2){background:#d8f5e9;color:#187c57}.avatar-stack span:nth-child(3){background:#ffe8d7;color:#a45319}.avatar-stack span:nth-child(4){background:#e9e2ff;color:#6541c3}.trust-row p{margin:0;font-size:12px;line-height:1.5}.trust-row small{color:var(--muted)}.hero-visual{height:400px;position:relative;display:grid;place-items:center;background:radial-gradient(ellipse at center,#e4efff 0%,#f5f9ff 48%,#fff 72%);border-radius:45% 55% 50% 45%}.orbit{position:absolute;border:1px solid #c9dcff;border-radius:50%;transform:rotate(-22deg)}.orbit-one{width:390px;height:255px}.orbit-two{width:430px;height:315px;transform:rotate(35deg);border-color:#dce8fc}.profile-card{position:relative;width:255px;background:#fff;border:1px solid #e7edf8;border-radius:20px;overflow:hidden;box-shadow:var(--shadow);transform:rotate(-2deg);z-index:2}.profile-cover{height:82px;background:linear-gradient(120deg,#1356c9,#4e9aff);position:relative}.profile-cover:after{content:"";position:absolute;width:160px;height:160px;border:1px solid #ffffff45;border-radius:50%;right:-20px;top:-72px;box-shadow:0 0 0 20px #ffffff12,0 0 0 40px #ffffff0a}.profile-content{padding:0 19px 20px;position:relative}.profile-avatar{width:57px;height:57px;border-radius:17px;background:#dbe9ff;border:4px solid white;margin-top:-28px;display:grid;place-items:center;color:#185bc7;font-weight:900;font-size:16px;position:relative}.verified{position:absolute;top:9px;left:57px;background:#1cbd83;color:white;border:2px solid white;border-radius:50%;width:18px;height:18px;text-align:center;font-size:10px}.profile-content h3{font-size:17px;margin:10px 0 0;color:var(--navy)}.profile-content p{font-size:11px;color:var(--muted);margin:3px 0 18px}.profile-stats{display:flex;justify-content:space-between;border-top:1px solid var(--line);padding-top:14px}.profile-stats span{display:grid;gap:2px}.profile-stats b{font-size:11px;color:var(--navy)}.profile-stats small{font-size:9px;color:var(--muted)}.profile-line{height:7px;background:#edf3fc;border-radius:10px;margin-top:17px;width:100%}.profile-line.short{margin-top:7px;width:64%}.float-card{position:absolute;display:flex;align-items:center;gap:10px;background:white;padding:13px 14px;border:1px solid #e8eef8;border-radius:13px;box-shadow:0 13px 32px #204b8317;z-index:3}.float-card strong{display:block;font-size:11px;color:var(--navy)}.float-card small{display:block;color:var(--muted);font-size:9px;margin-top:3px}.card-top{top:48px;right:-3px}.card-bottom{bottom:43px;left:-4px}.mini-icon,.check-icon{width:31px;height:31px;display:grid;place-items:center;border-radius:9px;background:#e8f1ff;color:var(--blue);font-size:17px}.check-icon{background:#e0f8ee;color:#159765}.pill{font-size:8px;font-weight:800;color:#15855e;background:#e5f8ef;padding:5px 7px;border-radius:5px}.decor{position:absolute;color:#6fa3f9;font-size:30px}.decor-one{right:40px;bottom:74px}.decor-two{left:38px;top:77px;font-size:23px}
+.quick-stats{max-width:1144px;margin:0 auto 70px;padding:24px 32px;border:1px solid #e7eef8;border-radius:17px;display:grid;grid-template-columns:repeat(3,1fr);box-shadow:0 10px 35px #183b7010}.quick-stats>div{display:flex;align-items:center;gap:14px;padding:0 24px;border-right:1px solid var(--line)}.quick-stats>div:last-child{border:0}.stat-icon{width:42px;height:42px;flex-shrink:0;border-radius:13px;background:#edf4ff;color:var(--blue);display:grid;place-items:center;font-size:22px}.quick-stats p{margin:0;display:grid;gap:3px}.quick-stats strong{font-size:13px;color:var(--navy)}.quick-stats small{font-size:11px;color:var(--muted)}
+.section{max-width:1200px;margin:auto;padding:25px 28px 90px}.section-heading{display:flex;justify-content:space-between;align-items:end;gap:25px;margin-bottom:27px}.section h2,.how-section h2,.community-section h2,.join-section h2{font-size:clamp(29px,3.2vw,40px);line-height:1.2;letter-spacing:-1.2px;color:var(--navy);margin:12px 0}.section-heading p,.how-copy>p,.community-section p,.join-section p{color:var(--muted);font-size:13px;max-width:570px;margin:10px 0 0}.text-link{color:var(--blue);font-size:12px;font-weight:800;white-space:nowrap}.search-panel{display:grid;grid-template-columns:1fr 230px 115px;gap:12px;padding:14px;border:1px solid #e4ebf5;border-radius:14px;box-shadow:0 8px 25px #183b7008}.search-box,.select-box{display:flex;align-items:center;gap:10px;border:1px solid #e5ebf4;border-radius:9px;padding:0 13px;color:#7890b1;min-width:0}.search-box input,.select-box select{border:0;outline:0;width:100%;min-width:0;background:transparent;color:var(--text);font-size:12px;padding:12px 0}.select-box select{cursor:pointer}.search-button{border-radius:9px}.listing-note{font-size:10px;color:#78879b;margin:17px 0;display:flex;align-items:center;gap:7px}.sample-dot{width:6px;height:6px;border-radius:50%;background:#f4aa42}.jobs-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:17px}.job-card{border:1px solid #e5ecf6;border-radius:15px;padding:21px;transition:transform .2s,box-shadow .2s}.job-card:hover{transform:translateY(-4px);box-shadow:0 15px 35px #1c477711}.job-top{display:flex;align-items:center;justify-content:space-between}.company-logo{width:42px;height:42px;border-radius:12px;display:grid;place-items:center;font-weight:900;font-size:16px}.logo-blue{background:#e4efff;color:#1b62d4}.logo-purple{background:#f0e9ff;color:#7545d7}.logo-orange{background:#fff0df;color:#c77824}.job-type{font-size:10px;font-weight:700;color:#2364c8;background:#edf4ff;border-radius:6px;padding:6px 9px}.job-card h3{font-size:16px;color:var(--navy);margin:18px 0 4px}.company{font-size:11px;color:var(--muted);margin:0}.company span{padding:0 4px}.job-desc{font-size:12px;color:#687990;line-height:1.7;min-height:41px;margin:16px 0}.tags{display:flex;flex-wrap:wrap;gap:6px}.tags span{font-size:9px;color:#60718a;background:#f3f6fb;border-radius:5px;padding:5px 7px}.job-bottom{border-top:1px solid var(--line);margin-top:18px;padding-top:15px;display:flex;justify-content:space-between;align-items:center;gap:10px}.pay{font-size:10px;color:#718198}.apply-btn{border:0;background:transparent;color:var(--blue);font-size:11px;font-weight:800;cursor:pointer}.empty-state{padding:30px;text-align:center;background:var(--pale);border-radius:12px;color:var(--muted);font-size:13px}
+.how-section{background:#f5f8fd;padding:78px max(6%,calc((100% - 1144px)/2));display:grid;grid-template-columns:.85fr 1.15fr;gap:80px;align-items:center}.how-copy>p{line-height:1.8;margin-bottom:24px}.steps{display:grid;gap:12px}.step{background:#fff;border:1px solid #e6edf7;border-radius:13px;padding:20px;display:grid;grid-template-columns:42px 1fr 30px;gap:14px;align-items:center}.step-number{font-size:12px;color:var(--blue);font-weight:900}.step h3{font-size:14px;color:var(--navy);margin:0 0 5px}.step p{font-size:11px;color:var(--muted);margin:0;line-height:1.65}.step-symbol{font-size:22px;color:#75a6f7;background:#edf4ff;border-radius:10px;width:32px;height:32px;display:grid;place-items:center}
+.community-section{max-width:1144px;margin:75px auto;padding:35px 40px;border-radius:20px;background:linear-gradient(115deg,#1559c9,#3285f6);color:white;display:flex;align-items:center;gap:23px;box-shadow:0 20px 40px #1769e82b}.community-icon{width:58px;height:58px;flex-shrink:0;border-radius:17px;background:#ffffff1c;border:1px solid #ffffff30;display:grid;place-items:center;font-size:28px}.community-section .eyebrow{color:#cde0ff}.community-section h2{font-size:27px;color:white;margin:7px 0}.community-section p{color:#e0ebff;margin:0}.community-section>div:nth-child(2){flex:1}.join-section{max-width:1144px;margin:0 auto 75px;padding:30px 28px;display:flex;align-items:center;justify-content:space-between;gap:30px;border-top:1px solid var(--line)}.join-section h2{font-size:31px}.join-section p{max-width:630px;line-height:1.8}.footer{padding:32px max(5.5%,calc((100% - 1200px)/2));background:#f7f9fd;display:grid;grid-template-columns:1fr 1fr;align-items:center;gap:14px}.footer>p{font-size:11px;color:var(--muted);text-align:right}.footer-links{display:flex;gap:22px;font-size:11px;color:#60718a}.footer>small{justify-self:end;color:#8592a5;font-size:10px}.notice-dialog{border:1px solid #e4ebf6;border-radius:20px;padding:30px;max-width:390px;width:calc(100% - 32px);box-shadow:0 25px 80px #0d2b5633;text-align:center;color:var(--text)}.notice-dialog::backdrop{background:#0d1f3d77;backdrop-filter:blur(3px)}.dialog-close{position:absolute;right:15px;top:10px;border:0;background:transparent;font-size:26px;color:#75839a;cursor:pointer}.dialog-icon{width:49px;height:49px;margin:0 auto 15px;border-radius:15px;background:#eaf2ff;color:var(--blue);display:grid;place-items:center;font-size:23px}.notice-dialog h2{font-size:22px;color:var(--navy);margin:0 0 10px}.notice-dialog p{font-size:13px;line-height:1.7;color:var(--muted)}.dialog-ok{margin-top:10px;min-width:110px}
+@media(max-width:900px){.hero{gap:20px;padding-top:55px}.hero-visual{transform:scale(.9);margin:0 -15px}.nav{gap:15px}.quick-stats{margin-left:20px;margin-right:20px}.quick-stats>div{padding:0 12px}.how-section{gap:35px}.community-section,.join-section{margin-left:22px;margin-right:22px}.jobs-grid{gap:11px}.job-card{padding:16px}}
+@media(max-width:700px){.site-header{height:70px;padding:0 20px}.menu-toggle{display:block}.nav{display:none;position:absolute;top:69px;left:0;right:0;background:#fff;padding:18px 22px 23px;box-shadow:0 16px 22px #10234412;align-items:stretch;gap:15px;flex-direction:column;border-top:1px solid var(--line)}.nav.open{display:flex}.nav .btn{width:100%}.hero{grid-template-columns:1fr;padding:49px 23px 48px;gap:15px}.hero h1{font-size:48px;letter-spacing:-2px}.hero-text{font-size:14px}.hero-visual{height:340px;transform:scale(.91);margin:-2px -12px 0}.card-top{right:-4px}.card-bottom{left:-2px}.quick-stats{grid-template-columns:1fr;padding:9px 18px;margin:0 20px 55px}.quick-stats>div{border-right:0;border-bottom:1px solid var(--line);padding:15px 5px}.quick-stats>div:last-child{border-bottom:0}.section{padding:10px 20px 65px}.section-heading{align-items:flex-start;flex-direction:column;gap:12px}.section h2,.how-section h2{font-size:31px}.search-panel{grid-template-columns:1fr;gap:9px}.search-box,.select-box{min-height:44px}.search-button{min-height:44px}.jobs-grid{grid-template-columns:1fr}.job-desc{min-height:0}.how-section{padding:55px 22px;grid-template-columns:1fr;gap:30px}.step{padding:16px;grid-template-columns:32px 1fr 28px;gap:10px}.community-section{margin:50px 20px;padding:25px;align-items:flex-start;flex-wrap:wrap;gap:16px}.community-section>div:nth-child(2){flex-basis:calc(100% - 80px)}.community-section h2{font-size:24px}.community-section .btn{width:100%}.join-section{margin:0 20px 50px;padding:28px 0;align-items:flex-start;flex-direction:column;gap:20px}.join-section h2{font-size:28px}.footer{padding:28px 22px;grid-template-columns:1fr;gap:12px}.footer>p{text-align:left;margin:0}.footer-links{flex-wrap:wrap;gap:16px}.footer>small{justify-self:start}.brand{font-size:16px}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{transition:none!important}}
+
+</style>
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="#" aria-label="SB Connect home"><span class="brand-mark">SB</span><span>SB <b>CONNECT</b></span></a>
+    <button class="menu-toggle" id="menuToggle" aria-label="Open navigation" aria-expanded="false">☰</button>
+    <nav class="nav" id="nav">
+      <a href="#opportunities">Opportunities</a>
+      <a href="#how-it-works">How it works</a>
+      <a href="#community">Community</a>
+      <button class="btn btn-outline" id="loginBtn">Log in</button>
+      <button class="btn btn-primary" id="joinBtn">Join SB Connect</button>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-copy">
+        <div class="eyebrow"><span class="live-dot"></span> YOUR NEXT OPPORTUNITY STARTS HERE</div>
+        <h1>Connect globally.<br><span>Grow together.</span></h1>
+        <p class="hero-text">Meet people, discover job opportunities, and find freelance work in a community built to help you move forward.</p>
+        <div class="hero-actions">
+          <button class="btn btn-primary btn-large" id="heroJoinBtn">Get started free <span>→</span></button>
+          <a class="btn btn-light btn-large" href="#opportunities">Explore opportunities</a>
+        </div>
+        <div class="trust-row"><div class="avatar-stack"><span>J</span><span>A</span><span>M</span><span>+</span></div><p><strong>A world of possibilities</strong><br><small>Build your network, one connection at a time.</small></p></div>
+      </div>
+      <div class="hero-visual" aria-label="Illustration of a professional networking dashboard">
+        <div class="orbit orbit-one"></div><div class="orbit orbit-two"></div>
+        <div class="float-card card-top"><span class="mini-icon">✦</span><div><strong>New opportunity</strong><small>Remote · Worldwide</small></div><span class="pill">New</span></div>
+        <div class="profile-card">
+          <div class="profile-cover"></div>
+          <div class="profile-content"><div class="profile-avatar">SC</div><span class="verified">✓</span><h3>Your next chapter</h3><p>Skills meet opportunity.</p><div class="profile-stats"><span><b>Global</b><small>Community</small></span><span><b>Open</b><small>Opportunities</small></span><span><b>Your</b><small>Growth</small></span></div><div class="profile-line"></div><div class="profile-line short"></div></div>
+        </div>
+        <div class="float-card card-bottom"><span class="check-icon">✓</span><div><strong>Keep moving forward</strong><small>Your skills have value.</small></div></div>
+        <div class="decor decor-one">✧</div><div class="decor decor-two">+</div>
+      </div>
+    </section>
+
+    <section class="quick-stats" aria-label="Platform highlights">
+      <div><span class="stat-icon">◎</span><p><strong>Build connections</strong><small>Meet people beyond borders</small></p></div>
+      <div><span class="stat-icon">↗</span><p><strong>Find opportunities</strong><small>Explore jobs and projects</small></p></div>
+      <div><span class="stat-icon">◇</span><p><strong>Show your skills</strong><small>Let your work speak</small></p></div>
+    </section>
+
+    <section class="section opportunities" id="opportunities">
+      <div class="section-heading">
+        <div><div class="eyebrow">TAKE YOUR NEXT STEP</div><h2>Explore opportunities</h2><p>Discover sample listings and see the kinds of opportunities SB Connect is being designed for.</p></div>
+        <a class="text-link" href="#join">See how to join <span>→</span></a>
+      </div>
+      <div class="search-panel">
+        <label class="search-box"><span>⌕</span><input id="searchInput" type="search" placeholder="Search jobs, skills or keywords" aria-label="Search jobs, skills or keywords"></label>
+        <label class="select-box"><span>⌖</span><select id="categorySelect" aria-label="Filter by opportunity type"><option value="all">All opportunities</option><option value="Full-time">Full-time</option><option value="Freelance">Freelance</option><option value="Remote">Remote</option></select></label>
+        <button class="btn btn-primary search-button" id="searchBtn">Search</button>
+      </div>
+      <div class="listing-note"><span class="sample-dot"></span> Preview listings — these are examples, not verified live vacancies.</div>
+      <div class="jobs-grid" id="jobsGrid">
+        <article class="job-card" data-title="junior web developer html css javascript" data-category="Remote">
+          <div class="job-top"><span class="company-logo logo-blue">&lt;/&gt;</span><span class="job-type">Remote</span></div><h3>Junior Web Developer</h3><p class="company">Example Studio <span>·</span> Worldwide</p><p class="job-desc">Help create responsive websites and improve user experiences.</p><div class="tags"><span>HTML</span><span>CSS</span><span>JavaScript</span></div><div class="job-bottom"><span class="pay">Pay discussed</span><button class="apply-btn" data-job="Junior Web Developer">Details <span>→</span></button></div>
+        </article>
+        <article class="job-card" data-title="social media designer graphic design freelance" data-category="Freelance">
+          <div class="job-top"><span class="company-logo logo-purple">✳</span><span class="job-type">Freelance</span></div><h3>Social Media Designer</h3><p class="company">Sample Creative Co. <span>·</span> Remote</p><p class="job-desc">Design clear, engaging visuals for social media campaigns.</p><div class="tags"><span>Graphic Design</span><span>Canva</span><span>Creativity</span></div><div class="job-bottom"><span class="pay">Project-based</span><button class="apply-btn" data-job="Social Media Designer">Details <span>→</span></button></div>
+        </article>
+        <article class="job-card" data-title="customer support assistant full-time communication" data-category="Full-time">
+          <div class="job-top"><span class="company-logo logo-orange">✉</span><span class="job-type">Full-time</span></div><h3>Customer Support Assistant</h3><p class="company">Sample Services <span>·</span> Hybrid</p><p class="job-desc">Support customers, answer questions, and solve basic issues.</p><div class="tags"><span>Communication</span><span>Support</span><span>Teamwork</span></div><div class="job-bottom"><span class="pay">Salary varies</span><button class="apply-btn" data-job="Customer Support Assistant">Details <span>→</span></button></div>
+        </article>
+      </div>
+      <p class="empty-state" id="emptyState" hidden>No sample listings match your search. Try another keyword or category.</p>
+    </section>
+
+    <section class="how-section" id="how-it-works">
+      <div class="how-copy"><div class="eyebrow">SIMPLE BY DESIGN</div><h2>Your next step is closer than you think.</h2><p>SB Connect is being built to bring networking and professional opportunities into one accessible place.</p><button class="btn btn-primary" id="howJoinBtn">Become a member <span>→</span></button></div>
+      <div class="steps">
+        <div class="step"><span class="step-number">01</span><div><h3>Create your profile</h3><p>Introduce yourself, highlight your skills, and show what you can do.</p></div><span class="step-symbol">◎</span></div>
+        <div class="step"><span class="step-number">02</span><div><h3>Discover people and work</h3><p>Explore professional connections, jobs, and freelance projects.</p></div><span class="step-symbol">⌕</span></div>
+        <div class="step"><span class="step-number">03</span><div><h3>Make your next move</h3><p>Connect with people and pursue opportunities that fit your goals.</p></div><span class="step-symbol">↗</span></div>
+      </div>
+    </section>
+
+    <section class="community-section" id="community">
+      <div class="community-icon">✦</div><div><div class="eyebrow">BUILT FOR WHAT'S NEXT</div><h2>Your skills can take you places.</h2><p>Join a community designed around connection, learning, and opportunity.</p></div><button class="btn btn-white" id="communityJoinBtn">Join the community <span>→</span></button>
+    </section>
+
+    <section class="join-section" id="join">
+      <div><div class="eyebrow">SB CONNECT</div><h2>Start building your future.</h2><p>This is the first website preview. Account creation and real job applications will be enabled after the secure backend is connected.</p></div>
+      <button class="btn btn-primary btn-large" id="joinBottomBtn">Get early access <span>→</span></button>
+    </section>
+  </main>
+
+  <footer class="footer"><a class="brand" href="#"><span class="brand-mark">SB</span><span>SB <b>CONNECT</b></span></a><p>Connect Globally. Discover Opportunities. Grow Together.</p><div class="footer-links"><a href="#opportunities">Opportunities</a><a href="#how-it-works">How it works</a><a href="mailto:hello@sbconnect.example">Contact</a></div><small>© <span id="year"></span> SB Connect. Website preview.</small></footer>
+
+  <dialog id="noticeDialog" class="notice-dialog"><button class="dialog-close" id="closeDialog" aria-label="Close dialog">×</button><div class="dialog-icon">✦</div><h2 id="dialogTitle">Welcome to SB Connect</h2><p id="dialogMessage">This feature will be available when account services are connected.</p><button class="btn btn-primary dialog-ok" id="dialogOk">Got it</button></dialog>
+  <script>
+const dialog = document.getElementById('noticeDialog');
+const dialogTitle = document.getElementById('dialogTitle');
+const dialogMessage = document.getElementById('dialogMessage');
+
+function showNotice(title, message) {
+  dialogTitle.textContent = title;
+  dialogMessage.textContent = message;
+  if (typeof dialog.showModal === 'function') dialog.showModal();
+  else alert(title + '\\n\\n' + message);
+}
+
+const joinMessage = 'Thanks for your interest in SB Connect! Account registration is not active yet. The next development step is connecting a secure authentication service and database.';
+['joinBtn','heroJoinBtn','howJoinBtn','communityJoinBtn','joinBottomBtn'].forEach(id => {
+  const button = document.getElementById(id);
+  if (button) button.addEventListener('click', () => showNotice('Join SB Connect', joinMessage));
+});
+document.getElementById('loginBtn').addEventListener('click', () => {
+  showNotice('Member login', 'Member login will be enabled after secure account services are connected.');
+});
+document.getElementById('closeDialog').addEventListener('click', () => dialog.close());
+document.getElementById('dialogOk').addEventListener('click', () => dialog.close());
+dialog.addEventListener('click', event => {
+  if (event.target === dialog) dialog.close();
+});
+
+const searchInput = document.getElementById('searchInput');
+const categorySelect = document.getElementById('categorySelect');
+const cards = [...document.querySelectorAll('.job-card')];
+const emptyState = document.getElementById('emptyState');
+
+function filterJobs() {
+  const term = searchInput.value.trim().toLowerCase();
+  const category = categorySelect.value;
+  let visible = 0;
+  cards.forEach(card => {
+    const matchesTerm = !term || card.dataset.title.includes(term) || card.textContent.toLowerCase().includes(term);
+    const matchesCategory = category === 'all' || card.dataset.category === category;
+    const show = matchesTerm && matchesCategory;
+    card.hidden = !show;
+    if (show) visible++;
+  });
+  emptyState.hidden = visible !== 0;
+}
+document.getElementById('searchBtn').addEventListener('click', filterJobs);
+searchInput.addEventListener('input', filterJobs);
+categorySelect.addEventListener('change', filterJobs);
+searchInput.addEventListener('keydown', event => {
+  if (event.key === 'Enter') filterJobs();
+});
+document.querySelectorAll('.apply-btn').forEach(button => {
+  button.addEventListener('click', () => showNotice(button.dataset.job, 'This is a sample listing for the website preview. Job details and applications will be enabled after the platform backend is connected.'));
+});
+
+const menuToggle = document.getElementById('menuToggle');
+const nav = document.getElementById('nav');
+menuToggle.addEventListener('click', () => {
+  const open = nav.classList.toggle('open');
+  menuToggle.setAttribute('aria-expanded', String(open));
+  menuToggle.setAttribute('aria-label', open ? 'Close navigation' : 'Open navigation');
+  menuToggle.textContent = open ? '×' : '☰';
+});
+nav.querySelectorAll('a').forEach(link => link.addEventListener('click', () => {
+  nav.classList.remove('open');
+  menuToggle.setAttribute('aria-expanded','false');
+  menuToggle.textContent = '☰';
+}));
+document.getElementById('year').textContent = new Date().getFullYear();
+
+</script>
+</body>
+</html>
